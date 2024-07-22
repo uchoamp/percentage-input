@@ -149,8 +149,7 @@ function __configureInputPercentageMask(el, opts) {
 }
 
 const percentageInputFormat = {
-  maskPercentage: function (opts) {
-
+  inputPercentage: function (opts) {
     const default_opts = {
       negative: false,
       sufix: "%",
@@ -169,5 +168,5 @@ const percentageInputFormat = {
 
 jQuery.fn.extend(percentageInputFormat);
 
-$(".percentage-field").maskPercentage({ negative: false, decimal_places: 0, input_classes: "form-control" })
+$(".percentage-field").inputPercentage({ negative: true, decimal_places: 2, input_classes: "form-control" })
 
